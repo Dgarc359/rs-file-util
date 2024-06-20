@@ -6,7 +6,7 @@ use std::{
 
 // see reference implementations
 // https://www.thorsten-hans.com/weekly-rust-trivia-get-all-files-in-a-directory/
-pub fn get_filenames_from_folder(folder_path: &String) -> io::Result<Vec<String>> {
+pub fn get_filenames_from_folder(folder_path: &str) -> io::Result<Vec<String>> {
     let result = read_dir(Path::new(folder_path))?;
 
     let files = result
@@ -23,7 +23,7 @@ pub fn get_filenames_from_folder(folder_path: &String) -> io::Result<Vec<String>
     Ok(files)
 }
 
-pub fn get_pathbuffers_from_folder(folder_path: &String) -> io::Result<Vec<PathBuf>> {
+pub fn get_pathbuffers_from_folder(folder_path: &str) -> io::Result<Vec<PathBuf>> {
     let result = read_dir(Path::new(folder_path))?;
 
     let files = result
