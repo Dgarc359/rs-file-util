@@ -5,6 +5,7 @@ Simple rust file utils to simplify and accelerate development in rust
 ## Usage
 ```toml
 # cargo.toml
+[dependencies]
 rs-file-utils = {git = "https://github.com/Dgarc359/rs-file-util", branch = "main" }
 ```
 > [!IMPORTANT]
